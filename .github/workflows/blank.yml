@@ -24,5 +24,5 @@ jobs:
           echo ${{ secrets.PG_PASS }}
           echo ${{ vars.DB_HOST }}
           # Execute o comando psql
-          PGPASSWORD=${{ secrets.PG_PASS }} psql -d db-mg -h ${{ vars.DB_HOST }} -U postgres -Listagem.sql
+          PGPASSWORD=${{ secrets.PG_PASS }} psql -d db-mg -h ${{ vars.DB_HOST }} -U postgres -f Listagem.sql
           
