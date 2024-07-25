@@ -29,4 +29,4 @@ jobs:
             exit 1
           fi
           # Execute o comando psql
-          PGPASSWORD=${{ secrets.PG_PASS }} psql -d db-mg -h ${{ vars.DB_HOST }} -U postgres -c "\l" 
+          PGPASSWORD=${{ secrets.PG_PASS }} psql -d db-mg -h ${{ vars.DB_HOST }} -U postgres 
